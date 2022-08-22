@@ -1,0 +1,68 @@
+.form {
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid black;
+  background: #eaeaea;
+}
+
+.title,
+.caption {
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.caption {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+
+.title::before,
+.title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 70px;
+  top: 30px;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.title::before {
+  left: 20px;
+}
+
+.title::after {
+  right: 20px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name-container > * {
+  max-width: 120px;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  margin-top: 10px;
+  min-width: 271px;
+}
