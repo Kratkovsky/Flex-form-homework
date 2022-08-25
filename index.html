@@ -19,13 +19,17 @@
       type="text"
       name="first_name"
       placeholder="First Name"
+      required
+      pattern="^[a-z0-9_-]{3,15}$"
       >
       <input type="text"
       id="name"
-      class="last-name"
+      class="name"
       type="text"
       name="last_name"
       placeholder="Last Name"
+      required
+      pattern="^[a-z0-9_-]{3,15}$"
       >
     </section>
     <section class="data-container">
@@ -35,6 +39,8 @@
       type="email"
       name="user_email"
       placeholder="Email"
+      required
+      pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
       >
       <input 
       id="password"
@@ -42,6 +48,8 @@
       type="password"
       name="user_password"
       placeholder="Password"
+      required
+      pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
       >
       <input 
       type="password"
@@ -50,16 +58,26 @@
       type="password"
       name="user_confirm_password"
       placeholder="Confirm Password"
+      required
+      pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
       >
     </section>
-    <input type="checkbox">
-    <p>I accept the</p>
-    <a href="#">Term of Use &</a>
-    <a href="#">Privacy Policy</a>
+    <section class="checkbox-container">
+      <input
+      id="accept" 
+      type="checkbox"
+      class="checkbox"
+      value="true"
+      required>
+      <p class="accept-text text">I accept the</p>
+      <a class="link text" href="#">Term of Use</a>
+      <p class="text">&</p>
+      <a class="link text" href="#">Privacy Policy</a>
+    </section>
     <input 
-    type="button" 
+    type="submit"
+    class="btn" 
     value="Register Now">
   </form>
-  </div>
 </body>
 </html>

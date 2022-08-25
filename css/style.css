@@ -1,3 +1,12 @@
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+  --secondary-opacity: 0.6;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
 .form {
   margin: 0 auto;
   width: 300px;
@@ -14,16 +23,17 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #333;
+  opacity: 0.9;
 }
 
 .caption {
   padding-top: 10px;
   padding-bottom: 20px;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: var(--secondary-opacity);
 }
 
 
@@ -32,18 +42,18 @@
   content: '';
   display: block;
   position: absolute;
-  width: 70px;
+  width: 80px;
   top: 30px;
-  vertical-align: middle;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
+  opacity: 0.3;
 }
 
 .title::before {
-  left: 20px;
+  left: 15px;
 }
 
 .title::after {
-  right: 20px;
+  right: 15px;
 }
 
 .name-container {
@@ -53,6 +63,10 @@
 
 .name-container > * {
   max-width: 120px;
+}
+
+.name {
+  padding: 3px;
 }
 
 .data-container {
@@ -65,4 +79,40 @@
 .info {
   margin-top: 10px;
   min-width: 271px;
+  padding: 3px;
+}
+
+.checkbox-container {
+  display: flex;
+  font-size: 12px;
+}
+
+.text {
+  margin: 20px 0;
+  opacity: var(--secondary-opacity);
+}
+
+.checkbox {
+  margin-left: 11px;
+  margin-right: 5px;
+}
+
+.link {
+  color: green;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 271px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 14px;
+  background: green;
+  color: white;
 }
