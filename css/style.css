@@ -113,6 +113,7 @@ body {
   border-radius: 5px;
   border-color: transparent;
   font-size: 14px;
+  font-weight: bold;
   background: green;
   color: white;
 }
